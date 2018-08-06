@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:context=".HomePageActivity">
+
+
+        <LinearLayout
+            android:id="@+id/activity_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/scrollHorizon0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/search_bar"
+                        android:layout_width="330dp"
+                        android:layout_height="match_parent"
+                        android:hint="Search For A Movie"
+                        android:inputType="text" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_search_black_24dp" />
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:id="@+id/scrollHorizon10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/NewMovieTrailers"
+                    android:layout_width="312dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Recently Released Movies     "
+                    android:textAllCaps="false"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/moreNewMoviesss"
+                    android:layout_width="65dp"
+                    android:layout_height="39dp"
+                    android:gravity="top"
+                    android:lineSpacingExtra="30sp"
+                    android:text="MORE >"
+                    android:textAllCaps="false"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/scrollHorizon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageButton1"
+                            android:layout_width="115dp"
+                            android:layout_height="170dp"
+
+
+                            app:srcCompat="@drawable/antman_poster" />
+
+                        <TextView
+                            android:layout_width="115dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Ant-Man and the Wasp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageButton2"
+                            android:layout_width="115dp"
+                            android:layout_height="170dp"
+                            android:onClick="onClickDescPage"
+                            app:srcCompat="@drawable/avengers_poster" />
+
+
+                        <TextView
+                            android:layout_width="115dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Avengers: Infinity War" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageButton3"
+                            android:layout_width="115dp"
+                            android:layout_height="170dp"
+                            app:srcCompat="@drawable/incredibles_poster" />
+
+                        app:srcCompat="@drawable/antman_poster" />
+
+                        <TextView
+                            android:layout_width="115dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Incredibles 2" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageButton4"
+                            android:layout_width="115dp"
+                            android:layout_height="170dp"
+                            app:srcCompat="@drawable/skyscraper_poster" />
+
+                        app:srcCompat="@drawable/antman_poster" />
+
+                        <TextView
+                            android:layout_width="115dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Skyscraper" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageButton5"
+                            android:layout_width="115dp"
+                            android:layout_height="170dp"
+                            app:srcCompat="@drawable/jurassic_world_fallen_kingdom" />
+
+                        app:srcCompat="@drawable/antman_poster" />
+
+                        <TextView
+                            android:layout_width="115dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Jurassic World: Fallen Kingdom" />
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+            </HorizontalScrollView>
+
+
+            <LinearLayout
+                android:id="@+id/scrollHorizon100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/NowInCinemas"
+                    android:layout_width="312dp"
+                    android:layout_height="match_parent"
+                    android:text="Upcoming Movies        "
+                    android:textAllCaps="false"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/moreNewMoviess"
+                    android:layout_width="65dp"
+                    android:layout_height="39dp"
+                    android:gravity="top"
+                    android:lineSpacingExtra="30sp"
+                    android:text="MORE >"
+                    android:textAllCaps="false"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/scrollHorizon2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageButton6"
+                            android:layout_width="115dp"
+                            android:layout_height="170dp"
+                            app:srcCompat="@drawable/mission_impossible_fallout" />
+
+                        app:srcCompat="@drawable/antman_poster" />
+
+                        <TextView
+                            android:layout_width="115dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Mission Impossible: Fallout" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageButton7"
+                            android:layout_width="115dp"
+                            android:layout_height="170dp"
+                            app:srcCompat="@drawable/slender_man_poster" />
+
+                        app:srcCompat="@drawable/antman_poster" />
+
+                        <TextView
+                            android:layout_width="115dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Slender Man" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageButton8"
+                            android:layout_width="115dp"
+                            android:layout_height="170dp"
+                            app:srcCompat="@drawable/the_nun_poster" />
+
+                        app:srcCompat="@drawable/antman_poster" />
+
+                        <TextView
+                            android:layout_width="115dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="The Nun" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageButton9"
+                            android:layout_width="115dp"
+                            android:layout_height="170dp"
+                            app:srcCompat="@drawable/the_purge_anarchy_poster" />
+
+                        app:srcCompat="@drawable/antman_poster" />
+
+                        <TextView
+                            android:layout_width="115dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="The Purge: Anarchy" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageButton0"
+                            android:layout_width="115dp"
+                            android:layout_height="170dp"
+                            app:srcCompat="@drawable/the_croods_poster" />
+
+                        app:srcCompat="@drawable/antman_poster" />
+
+                        <TextView
+                            android:layout_width="115dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="The Croods 2" />
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:id="@+id/scrollHorizon1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/MostPopular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Most Popular Movies              "
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/moreNewMovies"
+                    android:layout_width="65dp"
+                    android:layout_height="39dp"
+                    android:lineSpacingExtra="30sp"
+                    android:text="MORE >"
+                    android:textAllCaps="false"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/scrollHorizon3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageButton50"
+                            android:layout_width="115dp"
+                            android:layout_height="170dp"
+                            app:srcCompat="@drawable/jurassic_world_fallen_kingdom" />
+
+
+                        <TextView
+                            android:layout_width="115dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Jurassic World: Fallen Kingdom" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageButton11"
+                            android:layout_width="115dp"
+                            android:layout_height="170dp"
+                            app:srcCompat="@drawable/hotel_transylyania_poster" />
+
+
+
+                        <TextView
+                            android:layout_width="115dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Hotel Transylyania 3" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageButton12"
+                            android:layout_width="115dp"
+                            android:layout_height="170dp"
+                            app:srcCompat="@drawable/the_equalizer_poster" />
+
+
+                        app:srcCompat="@drawable/antman_poster" />
+
+                        <TextView
+                            android:layout_width="115dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="The Equalizer 2" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageButton13"
+                            android:layout_width="115dp"
+                            android:layout_height="170dp"
+                            app:srcCompat="@drawable/incredibles_poster" />
+
+
+                        app:srcCompat="@drawable/antman_poster" />
+
+                        <TextView
+                            android:layout_width="115dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Incredibles 2" />
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageButton20"
+                            android:layout_width="115dp"
+                            android:layout_height="170dp"
+                            android:onClick="onClickDescPage"
+                            app:srcCompat="@drawable/avengers_poster" />
+
+                        <TextView
+                            android:layout_width="115dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Avengers: Infinity War" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/scrollHorizon4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="TESTINGTESTINGTESTINGTESTING"
+                        android:textSize="46dp"/>
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.constraint.ConstraintLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottomNavView_Bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:drawable="@android:color/white"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/bottom_navigation" />
+
+
+</android.support.constraint.ConstraintLayout>
